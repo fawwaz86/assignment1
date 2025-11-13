@@ -7,6 +7,8 @@
 
 <h1>NIGGGERRR BESAR</h1>
 
+<h1>IKE IKE AHHH KIMOCHI</h1>
+
   {{-- Page Heading --}}
   <div class="col-12 mb-4">
     <h3 class="text-center">Meet the members of Group 16:</h3>
