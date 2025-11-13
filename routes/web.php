@@ -18,3 +18,7 @@ Route::get('/contact', function () {
 Route::get('/syahmi',function(){
     return view(view:'syahmi');
 })->name("syahmi");
+
+Route::get('/fawwaz',function(){
+    return view(view:'fawwaz');
+})->name("fawwaz");
