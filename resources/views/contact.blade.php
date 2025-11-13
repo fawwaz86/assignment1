@@ -4,11 +4,11 @@
 
 @section('content')
 <div class="row justify-content-center">
-  <div class="col-md-8">
-    <div class="card">
-      <div class="card-body">
+  <div class="col-md-8 ">
+    <div class="card ">
+      <div class="card-body ">
         <h3>Contact Me</h3>
-        <p>Fill out the form below. (Note: backend processing not required for this assignment.)</p>
+        <p>Fill out the form below.</p>
 
         <form>
           <div class="mb-3">
@@ -26,8 +26,8 @@
             <textarea id="message" rows="5" class="form-control" placeholder="Write your message..."></textarea>
           </div>
 
-          <button type="submit" class="btn btn-primary" disabled>Send (no backend)</button>
-          <small class="text-muted d-block mt-2">Button disabled — backend processing not required.</small>
+          <button type="submit" class="btn btn-primary" disabled>Send</button>
+          
         </form>
 
       </div>

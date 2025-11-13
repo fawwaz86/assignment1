@@ -4,39 +4,32 @@
 
 @section('content')
 <div class="row">
-  <div class="col-md-8">
-    <h1>Meet the members of Group 16:</h1>
+  <div class="col-md-8 w-100">
+    <h3 >Meet the members of Group 16:</h3>
     <div class="card mb-3"> 
-      <div class="card-body">
+      <div class="card-body w-100">
      
-        <img src="DSC02456.jpg" alt="syahmi">
-        <p>Muhammad Syahmi Solihin Bin Mustafa</p>
-        <p>CB20086</p>
+        <img class="d-block mx-auto rounded-circle" src="{{ asset('images/SYAHMI.jpg') }}" alt="Syahmi Photo"  width="200">
+
+        <p class="text-center">Muhammad Syahmi Solihin Bin Mustafa <br></p>
+        <p class="text-center">CB20086</p>
        
       </div>
       
     </div>
   </div>
-
-  <div class="card mb-3">
+<div class="col-md-8 w-100">
+  <div class="card mb-3 w-100">
         <div class="card-body">
-          <img sr="" alt="fawwaz">
-          <p>Muhammad Fawwaz</p>
+          <img class="d-block mx-auto rounded-circle" src="{{ asset('images/SYAHMI.jpg') }}" alt="Syahmi Photo"  width="200">
+          <p class="text-center">Muhammad Fawwaz</p>
 
         </div>
 
       </div>
-
-  <div class="col-md-4">
-    <div class="card text-center">
-      <div class="card-body">
-        <!-- optional profile image: place img in public/images or use placeholder -->
-        <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="profile">
-        <h5 class="card-title">Contact</h5>
-        <p class="card-text">Email: youremail@example.com</p>
-        <a href="{{ route('contact') }}" class="btn btn-outline-secondary">Send Message</a>
-      </div>
     </div>
-  </div>
+    </div>
+
+  
 </div>
 @endsection
