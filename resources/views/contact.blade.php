@@ -4,30 +4,34 @@
 
 @section('content')
 <div class="row justify-content-center">
-  <div class="col-md-8 ">
-    <div class="card ">
-      <div class="card-body ">
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-body">
         <h3>Contact Me</h3>
         <p>Fill out the form below.</p>
 
+        @php
+          $fields = [
+            ['label' => 'Name', 'type' => 'text', 'id' => 'name', 'placeholder' => 'Your name'],
+            ['label' => 'Email', 'type' => 'email', 'id' => 'email', 'placeholder' => 'you@example.com'],
+            ['label' => 'Message', 'type' => 'textarea', 'id' => 'message', 'placeholder' => 'Write your message...', 'rows' => 5]
+          ];
+        @endphp
+
         <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" id="name" class="form-control" placeholder="Your name">
-          </div>
-
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" id="email" class="form-control" placeholder="you@example.com">
-          </div>
-
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea id="message" rows="5" class="form-control" placeholder="Write your message..."></textarea>
-          </div>
+          @foreach($fields as $field)
+            <div class="mb-3">
+              <label for="{{ $field['id'] }}" class="form-label">{{ $field['label'] }}</label>
+              
+              @if($field['type'] === 'textarea')
+                <textarea id="{{ $field['id'] }}" rows="{{ $field['rows'] }}" class="form-control" placeholder="{{ $field['placeholder'] }}"></textarea>
+              @else
+                <input type="{{ $field['type'] }}" id="{{ $field['id'] }}" class="form-control" placeholder="{{ $field['placeholder'] }}">
+              @endif
+            </div>
+          @endforeach
 
           <button type="submit" class="btn btn-primary" disabled>Send</button>
-          
         </form>
 
       </div>
