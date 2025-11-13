@@ -7,18 +7,14 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
-
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
 Route::get('/syahmi',function(){
-    return view(view:'syahmi');
-})->name("syahmi");
+    return view(view:'about');
+})->name("about");
 
 Route::get('/fawwaz',function(){
-    return view(view:'fawwaz');
+    return view(view:'about_fawwaz');
 })->name("fawwaz");

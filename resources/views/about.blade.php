@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title', 'syahmi')
+@section('title', 'Syahmi')
 @section('content')
 <div class="row justify-content-center">
    <div class="col-md-8">
