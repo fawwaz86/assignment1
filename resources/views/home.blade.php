@@ -11,21 +11,21 @@
   </div>
 
   {{-- Member 1 --}}
-  <div class="col-md-6">
-    <div class="card mb-3">
+  <div class="col-md-6 mb-3 d-flex">
+    <div class="card h-100 w-100">
       <div class="card-body text-center">
         <img class="d-block mx-auto rounded-circle" src="{{ asset('images/SYAHMI.jpg') }}" alt="Syahmi Photo" width="200">
-        <p>Muhammad Syahmi Solihin Bin Mustafa <br>CB20086</p>
+        <p class="mt-3">Muhammad Syahmi Solihin Bin Mustafa <br>CB20086</p>
       </div>
     </div>
   </div>
 
   {{-- Member 2 --}}
-  <div class="col-md-6">
-    <div class="card mb-3">
+  <div class="col-md-6 mb-3 d-flex">
+    <div class="card h-100 w-100">
       <div class="card-body text-center">
         <img class="d-block mx-auto rounded-circle" src="{{ asset('images/fawwaz.jpg') }}" alt="fawwaz Photo" width="200">
-        <p>Mohamad Fawwaz Hatmi Bin Mohd Faudzan <br>CB21073</p>
+        <p class="mt-3">Mohamad Fawwaz Hatmi Bin Mohd Faudzan <br>CB21073</p>
       </div>
     </div>
   </div>
